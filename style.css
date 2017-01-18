@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Proza+Libre);
+
+html {
+    background-color: #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 125%;
+    border: 0;
+    font: inherit;
+}
+
+, :before, *:after {
+  box-sizing: inherit;
+}
+
+/*container*/
+
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: column;
+    flex-flow: column;
+
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+a::selection{
+  background-color: #FFFF00;
+}
+
+/*left-nav*/
+
+.left-nav{
+  flex-basis: 100%;
+  padding: .8rem;
+  font-family: 'Proza Libre', sans-serif;
+  font-size: .8125rem;
+  margin-bottom: 10%;
+}
+
+.left-nav a{
+  text-decoration: none;
+  opacity: 0.63;
+}
+
+.left-nav a:hover{
+  text-decoration: none;
+  opacity: inherit;
+}
+
+.left-nav .active{
+  text-decoration: none;
+  position: relative;
+  opacity: 1;
+  font-weight: 500;
+}
+
+.left-nav .active::after{
+  content: '';
+  background-color: #00BD9C;
+  opacity: 0.3;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: .75rem;
+  position: absolute;
+  left: .5rem;
+  top: -.125rem;
+}
+
+.left-nav p:not(:first-child){
+  margin: .5rem 0;
+}
+
+.left-nav #title{
+  margin: 3rem 0 1rem 0;
+  opacity: 0.33;
+  font-weight: 700;
+}
+
+.left-nav #title::selection{
+  background-color: #FFFF00;
+}
+
+/*content*/
+
+.content{
+  flex-basis: 100%;
+  max-width: 36.25rem;
+  padding: .8rem;
+  line-height: 1.5rem;
+  opacity: 0.81;
+  font-family: 'Lato', sans-serif;
+}
+
+#title{
+  opacity: 0.33;
+  font-weight: 700;
+}
+
+td{
+  text-align: left;
+  vertical-align: top;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+td:first-child{
+  width: 22.050845%;
+}
+
+.content p:first-child{
+  margin-top: .5625em;
+}
+
+.content p::selection{
+  background-color: #FFFF00;
+}
+
+@media screen and (min-width: 30rem) {
+  html{
+    font-size: 100%;
+  }
+
+  .container{
+    flex-flow: row;
+  }
+  .content{
+    flex-basis: 66.10169%;
+    margin-left: 1.69492%;
+  }
+  .left-nav{
+    flex-basis: 32.20339%;
+  }
+}
