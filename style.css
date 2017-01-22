@@ -1,9 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Rubik);
-
 html {
     background-color: #fff;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,7 +9,7 @@ html {
     border: 0;
 }
 
-, :before, *:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
@@ -34,12 +30,9 @@ body{
     flex-flow: column;
 
     max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
     color: #000;
     font-size: 1rem;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin: 10% auto;
 }
 
 a{
@@ -99,13 +92,13 @@ a::selection{
   margin: .5rem 0;
 }
 
-.left-nav #title{
+.left-nav p.title{
   margin: 3rem 0 1rem 0;
-  opacity: 0.32;
+  opacity: .34;
   font-weight: 700;
 }
 
-.left-nav #title::selection{
+.left-nav .title::selection{
   background-color: #FFFF00;
 }
 
@@ -120,9 +113,9 @@ a::selection{
   font-family: 'Rubik', sans-serif;
 }
 
-#title{
-  opacity: 0.33;
-  font-weight: 700;
+.content .title{
+  opacity: 0.34;
+  font-weight: 500;
 }
 
 td{
