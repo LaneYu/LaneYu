@@ -17,6 +17,25 @@ body{
   margin: 0;
 }
 
+h3{
+  font-size: 1.618rem;
+}
+
+h4{
+  font-size: 1.402rem;
+}
+
+h3,h4{
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0;
+}
+
+img{
+  width: 100%;
+  opacity: 1;
+}
+
 /*container*/
 
 .container {
@@ -29,10 +48,14 @@ body{
     -webkit-flex-flow: column;
     flex-flow: column;
 
-    max-width: 1120px;
+    max-width: 1140px;
     color: #000;
     font-size: 1rem;
     margin: 10% auto;
+}
+
+.container::selection{
+  background-color: #FFF000;
 }
 
 a{
@@ -42,10 +65,6 @@ a{
 
 a:hover{
   text-decoration: underline;
-}
-
-a::selection{
-  background-color: #FFFF00;
 }
 
 /*left-nav*/
@@ -94,12 +113,8 @@ a::selection{
 
 .left-nav p.title{
   margin: 3rem 0 1rem 0;
-  opacity: .34;
+  opacity: .26;
   font-weight: 700;
-}
-
-.left-nav .title::selection{
-  background-color: #FFFF00;
 }
 
 /*content*/
@@ -121,8 +136,8 @@ a::selection{
 td{
   text-align: left;
   vertical-align: top;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 td:first-child{
@@ -134,11 +149,7 @@ td:not(:first-child){
 }
 
 .content p:first-child{
-  margin-top: .5625em;
-}
-
-.content p::selection{
-  background-color: #FFFF00;
+  margin-top: .5625rem;
 }
 
 .content a{
@@ -154,6 +165,15 @@ td:not(:first-child){
   opacity: 1;
 }
 
+/*content-blogs*/
+
+.content p.blog-date-hastag{
+  opacity: 0.34;
+  border-top: 0.5px solid #CFCFCF;
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+}
+
 @media screen and (min-width: 30rem) {
   html{
     font-size: 100%;
@@ -162,10 +182,12 @@ td:not(:first-child){
   .container{
     flex-flow: row;
   }
+
   .content{
     flex-basis: 66.10169%;
     margin-left: 1.69492%;
   }
+
   .left-nav{
     flex-basis: 32.20339%;
   }
