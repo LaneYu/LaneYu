@@ -4,7 +4,7 @@ html {
     margin: 0;
     padding: 0;
     font-size: 118.75%;
-    font-family: 'Rubik', 'Montserrat', sans-serif;
+    font-family: 'Rubik', 'Montserrat', 'Helvetica Neue', Helvetica, 'Roboto', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'Microsoft Jhenghei', sans-serif;
     border: 0;
 }
 
@@ -16,10 +16,6 @@ body{
   margin: 0;
 }
 
-h1{
-  font-size: 2.618rem;
-}
-
 h3{
   font-size: 1.618rem;
 }
@@ -28,7 +24,7 @@ h4{
   font-size: 1.402rem;
 }
 
-h1,h3,h4{
+h3,h4{
   font-weight: 400;
   color: #000;
   margin-bottom: 0;
@@ -126,9 +122,9 @@ a:hover{
   flex-basis: 100%;
   max-width: 36.25rem;
   padding: .8rem;
-  line-height: 1.5rem;
+  line-height: 1.618rem;
   opacity: 0.81;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', 'Helvetica Neue', Helvetica, 'Roboto', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'Microsoft Jhenghei', sans-serif;
 }
 
 .content .title{
@@ -136,7 +132,7 @@ a:hover{
   font-weight: 500;
 }
 
-.content .Chinese{
+.content .English{
   opacity: 0.68;
   margin-top: .5625rem;
 }
@@ -161,6 +157,10 @@ td:not(:first-child){
   padding-left: 2rem;
 }
 
+.content p:first-child{
+  margin-top: .5625rem;
+}
+
 .content a{
   padding-bottom: .05rem;
   border-bottom: .05rem solid;
@@ -176,7 +176,7 @@ td:not(:first-child){
 
 /*content-blogs*/
 
-.content p.blog-date-hashtag{
+.content p.blog-date-hastag{
   opacity: 0.34;
   border-top: 0.5px solid #CFCFCF;
   padding-top: 1rem;
